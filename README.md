@@ -11,6 +11,7 @@
 - [Was ist Vosmo](#🔹-vosmo)
 - [Features](#dart-features)
 - [License](#warning-license)
+- [Wichtig](#⛔️-wichtig)
 
 ## 🔹 Vosmo
 - Dies ist ein Discord-Bot für Vosmo, der verschiedene Funktionen bietet, um das Discord-Server-Erlebnis zu verbessern und die Kommunikation innerhalb der Community zu fördern.
@@ -20,6 +21,13 @@
 - Automod
 - Tickets
 
+
+
+
+
+
+
+## ⛔️ Wichtig
 
 ### :key: Environment Variables
 To run this project, you will need to add the following environment variables to your .env file
