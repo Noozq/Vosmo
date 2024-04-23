@@ -1,6 +1,7 @@
 # Vosmo
 
 # Feature
+[!]
 test
 
 ### Commands
