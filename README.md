@@ -8,11 +8,11 @@
 
 # :notebook_with_decorative_cover: Table of Contents
 
-- [Was ist Vosmo](#vosmo)
+- [Was ist Vosmo](#🔹-vosmo)
 - [Features](#dart-features)
 - [License](#warning-license)
 
-## Vosmo
+## 🔹 Vosmo
 - Dies ist ein Discord-Bot für Vosmo, der verschiedene Funktionen bietet, um das Discord-Server-Erlebnis zu verbessern und die Kommunikation innerhalb der Community zu fördern.
 
 
