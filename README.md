@@ -8,7 +8,7 @@
 
 # :notebook_with_decorative_cover: Table of Contents
 
-- [Was ist Vosmo](#vosmo
+- [Was ist Vosmo](#vosmo)
 - [Features](#dart-features)
 - [License](#warning-license)
 
