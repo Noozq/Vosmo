@@ -26,8 +26,5 @@ To run this project, you will need to add the following environment variables to
 
 ## :warning: License
 
-Distributed under the no License. See LICENSE.txt for more information.
+Distributed under the no License. See (LICENSE.txt) for more information.
 
-## :handshake: Contact
-
-noozq - [@twitter_handle](noozq) -
