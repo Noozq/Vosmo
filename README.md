@@ -1,6 +1,6 @@
 <div align='center'>
 
-<p>Descrip</p>
+<p>VOSMO</p>
 
 
 
