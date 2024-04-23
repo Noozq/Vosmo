@@ -20,7 +20,7 @@
 
 ### :key: Environment Variables
 To run this project, you will need to add the following environment variables to your .env file
-`YOUR_DISCORD_TOKEN`
+`TOKEN=YOUR_DISCORD_TOKEN`
 
 
 
