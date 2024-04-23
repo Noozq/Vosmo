@@ -12,11 +12,11 @@
 - [Features](#dart-features)
 - [License](#warning-license)
 
-### 🔹 Vosmo
+## :🔹: Vosmo
 - test
 
 
-### :dart: Features
+## :dart: Features
 - Automod
 - Tickets
 
