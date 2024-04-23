@@ -12,8 +12,8 @@
 - [Features](#dart-features)
 - [License](#warning-license)
 
-## :🔹: Vosmo
-- test
+## Vosmo
+- 
 
 
 ## :dart: Features
