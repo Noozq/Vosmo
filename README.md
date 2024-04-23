@@ -13,15 +13,6 @@
 - [Contact](#handshake-contact)
 
 
-## :star2: About the Project
-### :space_invader: Tech Stack
-<details> <summary>Client</summary> <ul>
-<li><a href="">Vosmo</a></li>
-</ul> </details>
-<details> <summary>Server</summary> <ul>
-<li><a href="">Vosmo</a></li>
-</ul> </details>
-
 ### :dart: Features
 - Automod
 - Tickets
@@ -29,7 +20,7 @@
 
 ### :key: Environment Variables
 To run this project, you will need to add the following environment variables to your .env file
-`test`
+`YOUR_DISCORD_TOKEN`
 
 
 
