@@ -12,6 +12,13 @@ client = commands.Bot(command_prefix='!', intents = intents)
 
 @client.event
 async def on_ready():
+  print(
+    f'''
+    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+    ┃    {client.user} - {client.user.id} - {version}     ┃
+    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+    '''
+    )
   print(f'{client.user}')
   #for filename in os.listdir('commands/tickets'):
   #if filename.endswith('.py'):
