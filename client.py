@@ -16,5 +16,6 @@ async def on_ready():
   for filename in os.listdir('commands/tickets'):
     if filename.endswith('.py'):
         await client.load_extension(f'commands.tickets.{filename[:-3]}')
-
-client.run(token)
+        
+if __name__ == '__main__':
+    client.run(token)
