@@ -20,9 +20,13 @@ async def on_ready():
     '''
     )
   print(f'{client.user}')
-  #for filename in os.listdir('commands/tickets'):
-  #if filename.endswith('.py'):
-  #await client.load_extension(f'commands.tickets.{filename[:-3]}')
+  for filename in os.listdir('commands/tickets'):
+    if filename.endswith('.py'):
+      await client.load_extension(f'commands.tickets.{filename[:-3]}')
+  
+  @client.command()
+  async def set_language(ctx, language : str):
+    
         
 if __name__ == '__main__':
     client.run(token)
