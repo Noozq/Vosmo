@@ -1,5 +1,5 @@
 import client
-from discord.ext import commnds
+from discord.ext import commands
 
 
 class Create_panel(commands.Cog):
