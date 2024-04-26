@@ -76,5 +76,3 @@ async def show_prefixes(ctx):
 
 if __name__ == '__main__':
   client.run(token)
-  
-      
