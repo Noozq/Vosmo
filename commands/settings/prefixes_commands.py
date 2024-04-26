@@ -14,6 +14,13 @@ class Prefixes_Commands(commands.Cog):
     embed = discord.Embed(description=f"Prefix set to {prefix}\n")
     await ctx.send(embed = embed)
 
+  @commands.command()
+  async def reset_prefix(self, ctx):
+    server_id = str(ctx.guild.id)
+    db[server_id] = "!"
+    embed = discord.Embed(description=f"Prefix reset to !\n")
+    await ctx.send(embed = embed)
+
   
   @commands.command()
   @commands.is_owner()
