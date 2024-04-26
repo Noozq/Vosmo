@@ -7,7 +7,7 @@ import os
 
 # LISTENER IMPORTS
 from events.guild_events import on_guild_join
-
+from events.join_events import on_member_join
 
 # SETTING
 def get_prefix(client, message):
@@ -28,6 +28,7 @@ client = commands.Bot(command_prefix=get_prefix, intents = intents)
 # LISTENER
 
 client.add_listener(on_guild_join)
+client.add_listener(on_member_join)
 
 @client.event
 async def on_ready():
@@ -41,6 +42,10 @@ async def on_ready():
   for filename in os.listdir('commands/settings'):
     if filename.endswith('.py'):
       await client.load_extension(f'commands.settings.{filename[:-3]}')
+
+  for filename in os.listdir('commands/roles'):
+    if filename.endswith('.py'):
+      await client.load_extension(f'commands.roles.{filename[:-3]}')
 
   
 
