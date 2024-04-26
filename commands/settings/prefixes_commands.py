@@ -24,8 +24,8 @@ class Prefixes_Commands(commands.Cog):
   
   @commands.command()
   @commands.is_owner()
-  async def show_prefixes(ctx):
-      embed = discord.Embed(self, title="Server Präfixe", color=discord.Color.red())
+  async def show_prefixes(self, ctx):
+      embed = discord.Embed(title="Server Präfixe", color=discord.Color.red())
 
       found_prefixes = False
       for key in db.keys():
@@ -41,5 +41,5 @@ class Prefixes_Commands(commands.Cog):
       await ctx.send(embed=embed)
 
 
-  async def setup(client):
+async def setup(client):
   await client.add_cog(Prefixes_Commands(client))

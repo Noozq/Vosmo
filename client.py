@@ -34,10 +34,15 @@ async def on_ready():
 
   #COMMANDS 
 
-  #SETTINGS
   for filename in os.listdir('commands/tickets'):
     if filename.endswith('.py'):
       await client.load_extension(f'commands.tickets.{filename[:-3]}')
+
+  for filename in os.listdir('commands/settings'):
+    if filename.endswith('.py'):
+      await client.load_extension(f'commands.settings.{filename[:-3]}')
+
+  
 
   print(
     Fore.BLUE + f"{client.user}" + Fore.BLACK + " -- " + Fore.BLUE + f"{client.user.id}" + Fore.BLACK + " -- " + Fore.BLUE + f"{bot_version}" + Fore.BLACK + " -- " + Fore.BLUE + f"{db['prefix']}"
