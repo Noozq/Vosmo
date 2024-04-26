@@ -21,6 +21,14 @@ client = commands.Bot(command_prefix=get_prefix, intents = intents)
 
 @client.event
 async def on_ready():
+
+  #COMMANDS 
+
+  #SETTINGS
+  for filename in os.listdir('commands/tickets'):
+    if filename.endswith('.py'):
+      await client.load_extension(f'commands.tickets.{filename[:-3]}')
+      
   db["version"] = "bot_version"
   print(
     f'''
@@ -30,9 +38,7 @@ async def on_ready():
     '''
     )
   print(f'{client.user}')
-  for filename in os.listdir('commands/tickets'):
-    if filename.endswith('.py'):
-      await client.load_extension(f'commands.tickets.{filename[:-3]}')
+  
   
 @client.command()
 async def set_prefix(ctx, prefix : str):
@@ -42,7 +48,18 @@ async def set_prefix(ctx, prefix : str):
   
 @client.command()
 async def show_allprefixes(ctx):
-  prefixes = "Server Pr"
+  prefixes = "Server Präfixe:\n"
+  for key in db.keys():
+      if key.isdigit():
+          server_id = key
+          prefix = db[key]
+          prefixes += f"ServerID: `{server_id}` | Prefix `{prefix}`\n"
+  if prefixes == "Server Präfixe:\n":
+    await ctx.send("No prefixes found.")
+    
+  await ctx.send(prefixes)
 
 if __name__ == '__main__':
-    client.run(token)
+  client.run(token)
+  
+      
