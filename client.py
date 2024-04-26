@@ -2,6 +2,7 @@ import discord
 from replit import db
 from discord.ext import commands 
 from dotenv import load_dotenv
+from colorama import Fore, Back, Style
 import os
 
 # LISTENER IMPORTS
@@ -37,42 +38,10 @@ async def on_ready():
   for filename in os.listdir('commands/tickets'):
     if filename.endswith('.py'):
       await client.load_extension(f'commands.tickets.{filename[:-3]}')
-      
-  db["version"] = "bot_version"
+
   print(
-    f'''
-    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-    ┃      {client.user} - {client.user.id} - {bot_version}       ┃
-    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-    '''
-    )
-  print(f'{client.user}')
-  
-  
-@client.command()
-async def set_prefix(ctx, prefix : str):
-  server_id = str(ctx.guild.id)
-  db[server_id] = prefix
-  embed = discord.Embed(description=f"Prefix set to {prefix}\n")
-  await ctx.send(embed = embed)
-  
-@client.command()
-@commands.is_owner()
-async def show_prefixes(ctx):
-    embed = discord.Embed(title="Server Präfixe", color=discord.Color.red())
-
-    found_prefixes = False
-    for key in db.keys():
-        if key.isdigit():
-            server_id = key
-            prefix = db[key]
-            embed.add_field(name=f"ServerID : {server_id}", value=f"Präfix: `{prefix}`", inline=False)
-            found_prefixes = True
-
-    if not found_prefixes:
-        embed.description = "Es sind keine Server-Präfixe gespeichert."
-
-    await ctx.send(embed=embed)
+    Fore.BLUE + f"{client.user}" + Fore.BLACK + " -- " + Fore.BLUE + f"{client.user.id}" + Fore.BLACK + " -- " + Fore.BLUE + f"{bot_version}" + Fore.BLACK + " -- " + Fore.BLUE + f"{db['prefix']}"
+  )
 
 if __name__ == '__main__':
   client.run(token)
