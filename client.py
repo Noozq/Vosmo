@@ -4,6 +4,9 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import os
 
+# LISTENER IMPORTS
+from events.guild_events import on_guild_join
+
 
 # SETTING
 def get_prefix(client, message):
@@ -18,6 +21,12 @@ token = os.getenv("TOKEN")
 bot_version = "0.1.0"
 
 client = commands.Bot(command_prefix=get_prefix, intents = intents)
+
+
+
+# LISTENER
+
+client.add_listener(on_guild_join)
 
 @client.event
 async def on_ready():
@@ -44,20 +53,26 @@ async def on_ready():
 async def set_prefix(ctx, prefix : str):
   server_id = str(ctx.guild.id)
   db[server_id] = prefix
-  await ctx.send(f"Prefix changed to {prefix}")
+  embed = discord.Embed(description=f"Prefix set to {prefix}\n")
+  await ctx.send(embed = embed)
   
 @client.command()
-async def show_allprefixes(ctx):
-  prefixes = "Server Präfixe:\n"
-  for key in db.keys():
-      if key.isdigit():
-          server_id = key
-          prefix = db[key]
-          prefixes += f"ServerID: `{server_id}` | Prefix `{prefix}`\n"
-  if prefixes == "Server Präfixe:\n":
-    await ctx.send("No prefixes found.")
-    
-  await ctx.send(prefixes)
+@commands.is_owner()
+async def show_prefixes(ctx):
+    embed = discord.Embed(title="Server Präfixe", color=discord.Color.red())
+
+    found_prefixes = False
+    for key in db.keys():
+        if key.isdigit():
+            server_id = key
+            prefix = db[key]
+            embed.add_field(name=f"ServerID : {server_id}", value=f"Präfix: `{prefix}`", inline=False)
+            found_prefixes = True
+
+    if not found_prefixes:
+        embed.description = "Es sind keine Server-Präfixe gespeichert."
+
+    await ctx.send(embed=embed)
 
 if __name__ == '__main__':
   client.run(token)
