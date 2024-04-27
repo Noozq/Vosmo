@@ -18,13 +18,8 @@
 
 
 ## :dart: Features
-- Automod
-- Tickets
-- Auto Publisher 
-- Auto Message
-- Fun
-- Giveaways 
-- Languages(de/en)
+- Join Roles
+- Welcomer
 
 
 

@@ -23,7 +23,8 @@ bot_version = "0.1.0"
 
 client = commands.Bot(command_prefix=get_prefix, intents = intents)
 
-
+# HELP COMMAND
+client.remove_command('help')
 
 # LISTENER
 
@@ -47,7 +48,9 @@ async def on_ready():
     if filename.endswith('.py'):
       await client.load_extension(f'commands.roles.{filename[:-3]}')
 
-  
+  for filename in os.listdir('commands/welcomer'):
+    if filename.endswith('.py'):
+      await client.load_extension(f'commands.welcomer.{filename[:-3]}')
 
   print(
     Fore.BLUE + f"{client.user}" + Fore.BLACK + " -- " + Fore.BLUE + f"{client.user.id}" + Fore.BLACK + " -- " + Fore.BLUE + f"{bot_version}" + Fore.BLACK + " -- " + Fore.BLUE + f"{db['prefix']}"
