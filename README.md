@@ -10,6 +10,7 @@
 
 - [Was ist Vosmo](#🔹-vosmo)
 - [Features](#dart-features)
+- [Games](#🎰-games)
 - [License](#warning-license)
 - [Wichtig](#⛔️-wichtig)
 
@@ -21,7 +22,10 @@
 - Join Roles
 - Welcomer
 
+## 🎰 Games
 
+> `💯` Counting:
+- `⭐️` Rewards (show/set)
 
 
 
