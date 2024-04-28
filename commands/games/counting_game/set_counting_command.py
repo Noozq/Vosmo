@@ -39,9 +39,9 @@ class Set_Counting_Command(commands.Cog):
                             server_id = key
                             prefix = db[key]
                             await message.add_reaction('❌')
-                            await message.channel.send('Das Counting Game wurde beendet!'
-                                                       f'\nDie richtige Zahl war: {self.current_number - 1}'
-                                                       f'starte neu mit `{prefix}start_counting_game`')
+                            await message.channel.send('Das Counting Game wurde beendet!\n'
+                                                       f'\nDie richtige Zahl war: **{self.current_number - 1}**\n'
+                                                       f'starte neu mit `{prefix}start_counting_game`\n')
                             self.current_game = None
                             self.current_number = 1
                             await self.clear_channel(message.channel)

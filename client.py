@@ -61,6 +61,10 @@ async def on_ready():
   for filename in os.listdir('commands/games/counting_game'):
     if filename.endswith('.py'):
       await client.load_extension(f'commands.games.counting_game.{filename[:-3]}')
+
+  for filename in os.listdir('commands/games/emoji_quiz'):
+    if filename.endswith('.py'):
+      await client.load_extension(f'commands.games.emoji_quiz.{filename[:-3]}')
       
   print(
     Fore.BLUE + f"{client.user}" + Fore.BLACK + " -- " + Fore.BLUE + f"{client.user.id}" + Fore.BLACK + " -- " + Fore.BLUE + f"{bot_version}" + Fore.BLACK + " -- " + Fore.BLUE + f"{db['prefix']}"
