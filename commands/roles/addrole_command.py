@@ -11,4 +11,4 @@ class Addrole_Command(commands.Cog):
     await ctx.send(f"Rolle {role.name} wurde {member.mention} hinzugefügt.")
 
 async def setup(client):
-  await clinet.add_cog(Addrole_Command(client))
+  await client.add_cog(Addrole_Command(client))

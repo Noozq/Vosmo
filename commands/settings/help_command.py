@@ -8,11 +8,11 @@ class Help_Command(commands.Cog):
     
   @commands.command()
   async def help(self, ctx):
-    for key in db.keys():
-      if key.isdigit():
-        prefix = db[key]
-        embed = discord.Embed(title = 'Alle Vosmo Commands!', description = f'\n '
-                              f'Prefix : {prefix}\n', color=discord.Color.red())
+        embed = discord.Embed(title = 'Alle Vosmo Commands!', description = f' ', color=discord.Color.red())
+        embed.add_field(name = 'Info', value = '`-`', inline = False)
+        embed.add_field(name = 'Moderation', value = '`-`', inline = False)
+        embed.add_field(name = 'Fun', value = '`start_counting_game` `start_quiz` ', inline = False)
+        embed.add_field(name = 'Settings', value = '`help` `set_prefix` `reset_prefix` `show_prefixes(owner)` ', inline = False)
         await ctx.send(embed=embed)
 
 async def setup(client):
