@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from replit import db
 
 class Help_Command(commands.Cog):
   def __init__(self, client):
@@ -7,8 +8,12 @@ class Help_Command(commands.Cog):
     
   @commands.command()
   async def help(self, ctx):
-    embed = discord.Embed(title="Help Command", color=discord.Color.red())
-    await ctx.send(embed=embed)
+    for key in db.keys():
+      if key.isdigit():
+        prefix = db[key]
+        embed = discord.Embed(title = 'Alle Vosmo Commands!', description = f'\n '
+                              f'Prefix : {prefix}\n', color=discord.Color.red())
+        await ctx.send(embed=embed)
 
 async def setup(client):
   await client.add_cog(Help_Command(client))
