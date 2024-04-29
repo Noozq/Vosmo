@@ -10,7 +10,7 @@
 
 - [Was ist Vosmo](#🔹-vosmo)
 - [Features](#dart-features)
-- [Working](⭐️ Coming Features)
+- [Upcoming](⭐️-Upcoming)
 - [Games](#🎰-games)
 - [License](#warning-license)
 - [Wichtig](#⛔️-wichtig)
@@ -30,7 +30,7 @@
 
 > `💯` Counting - rewards (show/set)
 
-## ⭐️ Coming Features
+## ⭐️ Upcoming
 
 
 ## ⛔️ Wichtig
