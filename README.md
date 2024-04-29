@@ -22,11 +22,9 @@
 
 
 ## :dart: Features
-> `[+]` Join Roles
-
-> `[+]` Welcomer
-
-> `[+]` Reaction Roles
+> `[+]`Join Roles
+> `[+]`Welcomer
+> `[+]`Reaction Roles
 
 ## :slot_machine: Games
 
