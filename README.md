@@ -25,6 +25,8 @@
 > `[+]`Join Roles
 > `[+]`Welcomer
 > `[+]`Reaction Roles
+> `[+]`Counting Game
+> `[+]`Info [bot/server/mod]
 
 ## :slot_machine: Games
 
