@@ -21,11 +21,11 @@
 ## :dart: Features
 - Join Roles
 - Welcomer
+- Reaction Roles
 
 ## 🎰 Games
 
-> `💯` Counting:
-- `⭐️` Rewards (show/set)
+> `💯` Counting - rewards (show/set)
 
 
 
