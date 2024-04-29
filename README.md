@@ -20,7 +20,9 @@
 
 ## :dart: Features
 > `[+]` Join Roles
+
 > `[+]` Welcomer
+
 > `[+]` Reaction Roles
 
 ## 🎰 Games
