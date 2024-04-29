@@ -11,7 +11,7 @@
 - [Was ist Vosmo](#🔹-vosmo)
 - [Features](#dart-features)
 - [Upcoming](#star-Upcoming)
-- [Games](#🎰-games)
+- [Games](#slot-games)
 - [License](#warning-license)
 - [Wichtig](#⛔️-wichtig)
 
@@ -26,7 +26,7 @@
 
 > `[+]` Reaction Roles
 
-## 🎰 Games
+## :slot: Games
 
 > `💯` Counting - rewards (show/set)
 
