@@ -1,3 +1,5 @@
+
+
 <div align='center'>
 
 <p>VOSMO</p>
@@ -46,7 +48,7 @@
 
 ## :key: Information
 
-> [Einladen]()
+> [Einladen](https://discord.com/oauth2/authorize?client_id=1230923346607083541&permissions=8&scope=bot)
 
 > `🔗` - [Support](https://discord.gg/Rtg3x34hRN)
 
