@@ -19,7 +19,7 @@
 
 
 ## :dart: Features
-- Join Roles
+> Join Roles
 - Welcomer
 - Reaction Roles
 
