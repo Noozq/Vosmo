@@ -10,7 +10,7 @@
 
 - [Was ist Vosmo](#🔹-vosmo)
 - [Features](#dart-features)
-- [Upcoming](⭐️-Upcoming)
+- [Upcoming](#⭐️-Upcoming)
 - [Games](#🎰-games)
 - [License](#warning-license)
 - [Wichtig](#⛔️-wichtig)
@@ -31,6 +31,14 @@
 > `💯` Counting - rewards (show/set)
 
 ## ⭐️ Upcoming
+
+> `[x]` Votes
+
+> `[x]` Beta-Access
+
+> `[x]` Emoji Quiz
+
+> `[x]` Moderation(Automod)
 
 
 ## ⛔️ Wichtig
