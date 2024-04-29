@@ -19,9 +19,9 @@
 
 
 ## :dart: Features
-> Join Roles
-- Welcomer
-- Reaction Roles
+> `-` Join Roles
+> `-` Welcomer
+> `-` Reaction Roles
 
 ## 🎰 Games
 
