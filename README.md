@@ -43,11 +43,12 @@
 ## Bilder
 
 ![alt text](https://media.discordapp.net/attachments/1233942181509861457/1233942181727698964/phonto.png?ex=6630e7f5&is=662f9675&hm=b5d0a9bf1aab9e5f883889304e7772a5228390048ea07c7a91476a19b3559017&)
-## ⛔️ Wichtig
 
-### :key: Environment Variables
-To run this project, you will need to add the following environment variables to your .env file
-`TOKEN=YOUR_DISCORD_TOKEN`
+## :key: Information
+
+> [Einladen]()
+
+> `🔗` - [Support](https://discord.gg/Rtg3x34hRN)
 
 
 
