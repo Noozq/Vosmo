@@ -10,7 +10,7 @@
 
 - [Was ist Vosmo](#🔹-vosmo)
 - [Features](#dart-features)
-- [Working](⭐️-Coming-Features)
+- [Working](⭐️ ComingFeatures)
 - [Games](#🎰-games)
 - [License](#warning-license)
 - [Wichtig](#⛔️-wichtig)
